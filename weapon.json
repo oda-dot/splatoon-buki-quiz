@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "name": "ドライブワイパー",
+    "range": 58,
+    "image": "/Weapon_Main_Splatana_Wiper.png"
+  },
+  {
+    "id": 2,
+    "name": "パラシェルター",
+    "range": 43,
+    "image": "/Weapon_Main_Splat_Brella.png"
+  },
+  {
+    "id": 3,
+    "name": "ボールドマーカー",
+    "range": 12,
+    "image": "/Weapon_Main_Sploosh-O-Matic.png"
+  },
+  {
+    "id": 4,
+    "name": "H3リールガン",
+    "range": 70,
+    "image": "/Weapon_Main_H-3_Nozzlenose.png"
+  },
+  {
+    "id": 5,
+    "name": "24式張替傘・甲",
+    "range": 56,
+    "image": "/Weapon_Main_Recycled_Brella_24_Mk_I.png"
+  },
+  {
+    "id": 6,
+    "name": "キャンピングシェルター",
+    "range": 62,
+    "image": "/Weapon_Main_Tenta_Brella.png"
+  },
+  {
+    "id": 7,
+    "name": "スパイガジェット",
+    "range": 50,
+    "image": "/Weapon_Main_Undercover_Brella.png"
+  },
+  {
+    "id": 8,
+    "name": "ジムワイパー",
+    "range": 75,
+    "image": "/Weapon_Main_Splatana_Stamper.png"
+  },
+  {
+    "id": 9,
+    "name": "わかばシューター",
+    "range": 35,
+    "image": "/Weapon_Main_Splattershot_Jr..png"
+  },
+  {
+    "id": 10,
+    "name": "シャープマーカー",
+    "range": 42,
+    "image": "/Weapon_Main_Splash-o-matic.png"
+  },
+  {
+    "id": 11,
+    "name": "プロモデラーMG",
+    "range": 35,
+    "image": "/Weapon_Main_Aerospray_MG.png"
+  },
+  {
+    "id": 12,
+    "name": "スプラシューター",
+    "range": 50,
+    "image": "/Weapon_Main_Splattershot.png"
+  },
+  {
+    "id": 13,
+    "name": "52ガロン",
+    "range": 55,
+    "image": "/Weapon_Main_.52_Gal.png"
+  },
+  {
+    "id": 14,
+    "name": "N-ZAP85",
+    "range": 50,
+    "image": "/Weapon_Main_N-ZAP_'85.png"
+  },
+  {
+    "id": 15,
+    "name": "デュアルスイーパー",
+    "range": 70,
+    "image": "/Weapon_Main_Dualie_Squelchers.png"
+  },
+  {
+    "id": 16,
+    "name": "プライムシューター",
+    "range": 70,
+    "image": "/Weapon_Main_Splattershot_Pro.png"
+  },
+  {
+    "id": 17,
+    "name": "96ガロン",
+    "range": 74,
+    "image": "/Weapon_Main_.96_Gal.png"
+  },
+  {
+    "id": 18,
+    "name": "ジェットスイーパー",
+    "range": 82,
+    "image": "/Weapon_Main_Jet_Squelcher.png"
+  },
+  {
+    "id": 19,
+    "name": "スペースシューター",
+    "range": 68,
+    "image": "/Weapon_Main_Splattershot_Nova.png"
+  },
+  {
+    "id": 20,
+    "name": "L3リールガン",
+    "range": 62,
+    "image": "/Weapon_Main_L-3_Nozzlenose.png"
+  },
+  {
+    "id": 21,
+    "name": "ボトルガイザー",
+    "range": 77,
+    "image": "/Weapon_Main_Squeezer.png"
+  },
+  {
+    "id": 22,
+    "name": "カーボンローラー",
+    "range": 20,
+    "image": "/Weapon_Main_Carbon_Roller.png"
+  },
+  {
+    "id": 23,
+    "name": "スプラローラー",
+    "range": 48,
+    "image": "/Weapon_Main_Splat_Roller.png"
+  },
+  {
+    "id": 24,
+    "name": "ダイナモローラー",
+    "range": 76,
+    "image": "/Weapon_Main_Dynamo_Roller.png"
+  },
+  {
+    "id": 25,
+    "name": "ヴァリアブルローラー",
+    "range": 58,
+    "image": "/Weapon_Main_Flingza_Roller.png"
+  },
+  {
+    "id": 26,
+    "name": "ワイドローラー",
+    "range": 56,
+    "image": "/Weapon_Main_Big_Swig_Roller.png"
+  },
+  {
+    "id": 27,
+    "name": "スクイックリンα",
+    "range": 75,
+    "image": "/Weapon_Main_Classic_Squiffer.png"
+  },
+  {
+    "id": 28,
+    "name": "スプラチャージャー",
+    "range": 88,
+    "image": "/Weapon_Main_Splat_Charger.png"
+  },
+  {
+    "id": 29,
+    "name": "スプラスコープ",
+    "range": 91,
+    "image": "/Weapon_Main_Splatterscope.png"
+  },
+  {
+    "id": 30,
+    "name": "リッター4K",
+    "range": 96,
+    "image": "/Weapon_Main_E-liter_4K.png"
+  }
+]
+

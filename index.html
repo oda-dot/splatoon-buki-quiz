@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スプラトゥーン3 射程クイズゲーム</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- スタート画面 -->
+  <div id="start-screen" class="screen">
+    <div class="start-screen-container">
+      <h1>スプラトゥーン3 射程クイズゲーム</h1>
+      <button type="button" id="start-button">スタート</button>
+    </div>
+  </div>
+
+  <!-- クイズ画面 -->
+  <div id="quiz-screen" class="screen hidden">
+    <p>第<span id="question-number">1</span>問</p>
+    <p>射程が長いと思うブキの画像をタップ</p>
+    <div class="weapons-container">
+      <div id="weapon-1" weapon-id>
+        <div>ブキ1</div>
+        <img src="" alt="" class="quiz-screen-weapon-image">
+      </div>
+      <div id="weapon-2" weapon-id>
+        <div>ブキ2</div>
+        <img src="" alt="" class="quiz-screen-weapon-image">
+      </div>
+      <div class="progress">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+    <div id="answer-modal" class="modal hidden">
+      <img id="answer-image" src="" alt="回答">
+    </div>
+  </div>
+
+  <!-- 結果画面 -->
+  <div id="result-screen" class="screen hidden">
+    <h2>正答率</h2>
+    <p id="score-percentage">80%</p>
+    <div id="result-grid-container">
+      <!-- 回答結果はここに動的に挿入されます -->
+    </div>
+    <button id="to-title-button">タイトル画面に戻る</button>
+  </div>
+  <script type="module" src="src/script.ts"></script>
+
+</body>
+
+</html>
