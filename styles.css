@@ -27,24 +27,6 @@
   gap: 3vh;
 }
 
-.results-img {
-  width: 50px; /* 画像の幅を50pxに設定 */
-  height: auto; /* 高さを自動調整 */
-}
-
-/* pxつけ忘れでハマった */
-#start-button{
-  width: 60vw;
-  height: 5vh;
-  border-radius: 54px;
-  background-color: #C7C7C7;
-  border-color: transparent;
-  font-size: clamp(16px, 10vw, 32px); /* 最小値,目標値,最大値 */
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.1s ease; /* マウス当てた時の動作 */
-}
-
  #start-button:active {
   background-color: #9c9c9c; /* アクティブ時の背景色 */
  }
@@ -71,11 +53,12 @@
   display: grid;
   margin-left: 10vw;
   margin-right: 10vw;
-  grid-template-rows: repeat(11, auto);
-  grid-template-columns: repeat(3, auto);  
+  grid-template-rows: repeat(11, minmax(100px, auto));
+  grid-template-columns: repeat(3, auto);
 }
 
 #result-grid-container > div > div {
+  position: relative;
   /* border-right: 3px solid rgb(209, 209, 209); */
   border-bottom: 3px solid rgb(209, 209, 209);
 }
@@ -109,26 +92,11 @@ body {
 @font-face {
   font-family: 'CustomFont2';
   src: url('src/assets/fonts/IGAFONT.ttf') format('truetype');
-  /* unicode-range: */
-    /* U+3041-309F, ひらがな */
-    /* U+30A1-30FA; カタカナ */
+  unicode-range: 
+    U+3041-309F, /* ひらがな */
+    U+30A1-30FA; /* カタカナ */
   }
 
-@font-face {
-  font-family: 'CustomFont3';
-  src: url('src/assets/fonts/Ikaho-Hiragana.otf') format('opentype');
-  unicode-range:
-    U+0041-U+007A,
-    U+3041-309F; /* ひらがな */
-  }
-
-@font-face {
-  font-family: 'CustomFont4';
-  src: url('src/assets/fonts/Ikaho-Katakana.otf') format('opentype');
-  unicode-range:
-  U+0041-U+007A,
-  U+30A1-30FA; /* カタカナ */
-  }
 
 /* font-weight:normalを@font-faceに指定しても変わらなかったが、h1など個別に指定すると適用された */
 /* テキストに若干の角度をつけて日本語フォントが崩れるのを防ぐ */
@@ -142,11 +110,7 @@ h1, h2, p, div, text{
 }
 
 body {
-  font-family: 'CustomFont3', 'CustomFont4', 'CustomFont1', 'CustomFont2',  sans-serif;
-}
-
-button {
-  font-family: 'CustomFont1', 'CustomFont2', 'CustomFont3', 'CustomFont4', sans-serif;
+  font-family: 'CustomFont1', 'CustomFont2',  sans-serif;
 }
 
 /* ユーザーが選択したブキの強調：バックグラウンドカラー検討 */
@@ -154,16 +118,83 @@ button {
 /* ボタンの文字中央に flex 使うと簡単 */
 
 /* ぼかした丸を後ろに重ねたい */
-.selected-weapon {
-  --sample-color: 37 255 0;
-  aspect-ratio: 1 / 1;
-  background: radial-gradient(
-    circle,
-    rgb(var(--sample-color)),
-    rgba(var(--sample-color) / 0%)
-  );
+.selected-weapon-background {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  filter: blur(50px);
-  width: min(100%, 400px);
+  background-color: #00FF00;
 }
 
+.results-img {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+/* 親要素の「見た目」を消す */
+/* 子要素を直接親の位置に配置する */
+/* これにより、グリッドレイアウトで子要素を自由に配置できるようになる */
+/* https://qiita.com/raiga0310/items/331d8e65ffd7b25db4dc#:~:text=TL%3BDR%201%20grid-template-area%20%E3%81%A7%E5%90%8D%E5%89%8D%E3%81%A7%E3%82%B0%E3%83%AA%E3%83%83%E3%83%89%E3%83%AC%E3%82%A4%E3%82%A2%E3%82%A6%E3%83%88%E3%82%92%E5%AE%9F%E7%8F%BE%E3%81%A7%E3%81%8D%E3%82%8B%202%20%E9%85%8D%E7%BD%AE%E3%81%99%E3%82%8B%E5%AD%90%E8%A6%81%E7%B4%A0%E3%81%AF%20grid-area%20%E3%81%A7%E5%90%8D%E5%89%8D%E3%82%92%E3%81%A4%E3%81%91%E3%82%8B,%28%20%21%E5%AD%90%20%29%E8%A6%81%E7%B4%A0%E3%81%AB%20grid-area%20%E3%82%92%E4%BB%98%E3%81%91%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AF%E3%82%B0%E3%83%AA%E3%83%83%E3%83%89%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%BE%E3%81%A7%E3%81%AE%E8%A6%81%E7%B4%A0%E3%81%AF%20display%3A%20contents%20%E3%81%AB%E3%81%99%E3%82%8B */
+.result-grid-header {
+  display: contents;
+}
+
+/* ヘッダとするセルを1行目に */
+.header-cell {
+  align-content: center;
+  text-align: center;
+  grid-row: 1;
+}
+
+/* 問題を表示するセルは2列目から始まって3列目で終わるから、2列目から始まり、2列分の幅を持つことになる */
+.header-cell.question {
+  grid-column: 2 / span 2;
+}
+
+.result-question-number {
+  align-content: center;
+  text-align: center;
+}
+button {
+  font-family: 'CustomFont1', 'CustomFont2', sans-serif;
+  background-color: #603BFF;
+  color: #EAFF3D;
+  border: none;
+  outline: none;
+  /* 背景色の変化をのアニメーション。easeはなめらかに。 */
+  transition: background-color 0.3s ease;
+  width: 60vw;
+  height: 5vh;
+  border-radius: 54px;
+  border-color: transparent;
+  font-size: clamp(16px, 10vw, 32px); /* 最小値,目標値,最大値 */
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 押した感出したい。背景色を暗めにしてみる。 */
+#start-button:active {
+  background-color: #4b2ca7;
+}
+
+/* 背景の模様をつくる */
+/* background-sizeを調整することで、ストライプの太さ調整 */
+body {
+  /* グラデーションの方向と色の停止点を定義 */
+  /* %で色の範囲を指定 */
+  background-image: linear-gradient(45deg, #3C3C3C 25%, #333333 25%, #333333 50%, #3C3C3C 50%, #3C3C3C 75%, #333333 75%, #333333 100%);
+  background-size: 56.57px 56.57px;
+}
+
+body, h1, h2, p, div, text {
+  color: rgb(230, 230, 230);
+}

@@ -362,7 +362,7 @@ function displayQuestionHistory() {
         questionCell.style.gridColumnEnd = '2';
         questionCell.style.gridRowStart = `${index + 2}`;
         questionCell.style.gridRowEnd = `${index + 3}`;
-
+        questionCell.classList.add('result-question-number');
         
         const weapon1Image = weaponsData.find(weapon => weapon.id === history.question.weapon1Id)?.image ?? '';
         const weapon2Image = weaponsData.find(weapon => weapon.id === history.question.weapon2Id)?.image ?? '';
@@ -390,7 +390,7 @@ function displayQuestionHistory() {
 
 
         const selectedWeapon = document.createElement('div');
-        selectedWeapon.classList.add('selected-weapon');
+        selectedWeapon.classList.add('selected-weapon-background');
 
         // ユーザが選択したブキの方だけカラー表示とクラス付与を行う
         if (history.question.weapon1Id !== history.result.userAnswer) {
