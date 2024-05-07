@@ -311,7 +311,7 @@ function setupWeaponClickListener(userSelectedWeaponElement: HTMLDivElement, Use
             addQuestionHistory(questionNumberCount, weapon1Id, weapon2Id, userAnswer, correctAnswer);
             const isCorrect = userAnswer === correctAnswer;
             // モーダルと回答画像の表示を更新
-            answerImage.src = isCorrect ? 'public/mark_maru.png' : 'public/mark_batsu.png';
+            answerImage.src = isCorrect ? '/mark_maru.png' : '/mark_batsu.png';
             answerModal.classList.remove(STYLE_HIDDEN);
 
             // モーダルを自動で閉じて次の問題に進む
@@ -423,7 +423,7 @@ function displayQuestionHistory() {
 
         const resultCell = document.createElement('div');
         const resultImg = document.createElement('img');
-        resultImg.src = history.result.isAnswerCorrect ? 'public/mark_maru.png' : 'public/mark_batsu.png';
+        resultImg.src = history.result.isAnswerCorrect ? '/mark_maru.png' : '/mark_batsu.png';
         resultCell.appendChild(resultImg);
         // resultCell.style.gridArea = `result-${index + 1}-area`;
         resultCell.style.gridColumnStart = '4';
