@@ -178,6 +178,204 @@
     "name": "リッター4K",
     "range": 96,
     "image": "/Weapon_Main_E-liter_4K.png"
+  },
+  {
+    "id": 31,
+    "name": "リッター4Kスコープ",
+    "range": 100,
+    "image": "/Weapon_Main_E-liter_4K_Scope.png"
+  },
+  {
+    "id": 32,
+    "name": "14式竹筒銃・甲",
+    "range": 78,
+    "image": "/Weapon_Main_Bamboozler_14_Mk_I.png"
+  },
+  {
+    "id": 33,
+    "name": "ソイチューバー",
+    "range": 78,
+    "image": "/Weapon_Main_Goo_Tuber.png"
+  },
+  {
+    "id": 34,
+    "name": "R-PEN/5H",
+    "range": 91,
+    "image": "/Weapon_Main_Snipewriter_5H.png"
+  },
+  {
+    "id": 35,
+    "name": "バケットスロッシャー",
+    "range": 58,
+    "image": "/Weapon_Main_Slosher.png"
+  },
+  {
+    "id": 36,
+    "name": "ヒッセン",
+    "range": 31,
+    "image": "/Weapon_Main_Tri-Slosher.png"
+  },
+  {
+    "id": 37,
+    "name": "スクリュースロッシャー",
+    "range": 60,
+    "image": "/Weapon_Main_Sloshing_Machine.png"
+  },
+  {
+    "id": 38,
+    "name": "オーバーフロッシャー",
+    "range": 85,
+    "image": "/Weapon_Main_Bloblobber.png"
+  },
+  {
+    "id": 39,
+    "name": "エクスプロッシャー",
+    "range": 77,
+    "image": "/Weapon_Main_Explosher.png"
+  },
+  {
+    "id": 40,
+    "name": "モップリン",
+    "range": 60,
+    "image": "/Weapon_Main_Dread_Wringer.png"
+  },
+  {
+    "id": 41,
+    "name": "スプラスピナー",
+    "range": 62,
+    "image": "/Weapon_Main_Mini_Splatling.png"
+  },
+  {
+    "id": 42,
+    "name": "バレルスピナー",
+    "range": 78,
+    "image": "/Weapon_Main_Heavy_Splatling.png"
+  },
+  {
+    "id": 43,
+    "name": "ハイドラント",
+    "range": 85,
+    "image": "/Weapon_Main_Hydra_Splatling.png"
+  },
+  {
+    "id": 44,
+    "name": "クーゲルシュライバー",
+    "range": 84,
+    "image": "/Weapon_Main_Ballpoint_Splatling.png"
+  },
+  {
+    "id": 45,
+    "name": "ノーチラス47",
+    "range": 74,
+    "image": "/Weapon_Main_Nautilus_47.png"
+  },
+  {
+    "id": 46,
+    "name": "イグザミナー",
+    "range": 70,
+    "image": "/Weapon_Main_Heavy_Edit_Splatling.png"
+  },
+  {
+    "id": 47,
+    "name": "スパッタリー",
+    "range": 24,
+    "image": "/Weapon_Main_Dapple_Dualies.png"
+  },
+  {
+    "id": 48,
+    "name": "スプラマニューバー",
+    "range": 50,
+    "image": "/Weapon_Main_Splat_Dualies.png"
+  },
+  {
+    "id": 49,
+    "name": "ケルビン525",
+    "range": 66,
+    "image": "/Weapon_Main_Glooga_Dualies.png"
+  },
+  {
+    "id": 50,
+    "name": "クアッドホッパーブラック",
+    "range": 58,
+    "image": "/Weapon_Main_Dark_Tetra_Dualies.png"
+  },
+  {
+    "id": 51,
+    "name": "ガエンFF",
+    "range": 78,
+    "image": "/Weapon_Main_Douser_Dualies_FF.png"
+  },
+  {
+    "id": 52,
+    "name": "ノヴァブラスター",
+    "range": 18,
+    "image": "/Weapon_Main_Luna_Blaster.png"
+  },
+  {
+    "id": 53,
+    "name": "ホットブラスター",
+    "range": 27,
+    "image": "/Weapon_Main_Blaster.png"
+  },
+  {
+    "id": 54,
+    "name": "ロングブラスター",
+    "range": 56,
+    "image": "/Weapon_Main_Range_Blaster.png"
+  },
+  {
+    "id": 55,
+    "name": "クラッシュブラスター",
+    "range": 21,
+    "image": "/Weapon_Main_Clash_Blaster.png"
+  },
+  {
+    "id": 56,
+    "name": "ラピッドブラスター",
+    "range": 62,
+    "image": "/Weapon_Main_Rapid_Blaster.png"
+  },
+  {
+    "id": 57,
+    "name": "Rブラスターエリート",
+    "range": 72,
+    "image": "/Weapon_Main_Rapid_Blaster_Pro.png"
+  },
+  {
+    "id": 58,
+    "name": "S-BLAST92",
+    "range": 45,
+    "image": "/Weapon_Main_S-BLAST_'92.png"
+  },
+  {
+    "id": 59,
+    "name": "パブロ",
+    "range": 5,
+    "image": "/Weapon_Main_Inkbrush.png"
+  },
+  {
+    "id": 60,
+    "name": "ホクサイ",
+    "range": 23,
+    "image": "/Weapon_Main_Octobrush.png"
+  },
+  {
+    "id": 61,
+    "name": "フィンセント",
+    "range": 33,
+    "image": "/Weapon_Main_Painbrush.png"
+  },
+  {
+    "id": 62,
+    "name": "トライストリンガー",
+    "range": 88,
+    "image": "/Weapon_Main_Tri-Stringer.png"
+  },
+  {
+    "id": 63,
+    "name": "LACT-450",
+    "range": 60,
+    "image": "/Weapon_Main_REEF-LUX_450.png"
   }
 ]
 
