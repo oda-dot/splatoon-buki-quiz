@@ -57,10 +57,10 @@
   grid-template-columns: repeat(3, auto);
 }
 
-#result-grid-container > div > div {
+#result-grid-container > div > div,  #result-grid-container > div{
   position: relative;
   /* border-right: 3px solid rgb(209, 209, 209); */
-  border-bottom: 3px solid rgb(209, 209, 209);
+  border-bottom: 3px solid rgb(104, 104, 104);
 }
 
 .modal {
@@ -70,8 +70,8 @@
 .screen {
   width: 90vw;
   height: 90vh;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -113,7 +113,6 @@ body {
   font-family: 'CustomFont1', 'CustomFont2',  sans-serif;
 }
 
-/* ユーザーが選択したブキの強調：バックグラウンドカラー検討 */
 /* 問題数大きく */
 /* ボタンの文字中央に flex 使うと簡単 */
 
@@ -126,8 +125,8 @@ body {
   transform: translate(-50%, -50%);
   width: 25px;
   height: 25px;
-  border-radius: 50%;
-  background-color: #00FF00;
+  border-radius: 70% 50% 70% 60% / 40% 80% 60% 70%;
+  background-color: #EAFF3D;
 }
 
 .results-img {
@@ -191,10 +190,38 @@ button {
 body {
   /* グラデーションの方向と色の停止点を定義 */
   /* %で色の範囲を指定 */
-  background-image: linear-gradient(45deg, #3C3C3C 25%, #333333 25%, #333333 50%, #3C3C3C 50%, #3C3C3C 75%, #333333 75%, #333333 100%);
-  background-size: 56.57px 56.57px;
+  background-color: #fcfcfc;
+  background-image: 
+    linear-gradient(135deg, #d4d4d4 25%, transparent 25%), 
+    linear-gradient(225deg, #d4d4d4 25%, transparent 25%),
+    linear-gradient(45deg, #d4d4d4 25%, transparent 25%),
+    linear-gradient(315deg, #d4d4d4 25%, #fcfcfc 25%);
+  background-position:  20px 0, 20px 0, 0 0, 0 0;
+  background-size: 40px 40px;
+  background-repeat: repeat;
 }
 
 body, h1, h2, p, div, text {
-  color: rgb(230, 230, 230);
+  color: rgb(70, 70, 70);
+}
+
+#result-screen h2, #result-screen p, #to-title-button-block{
+  display: flex;
+  justify-content: center;
+}
+
+#result-screen h2 {
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+#result-screen p {
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#to-title-button {
+  font-size: 15px;
+  margin-top: 20px;
 }

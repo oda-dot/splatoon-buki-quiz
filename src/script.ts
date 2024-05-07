@@ -349,6 +349,22 @@ function calculateAndDisplayScore() {
 function displayQuestionHistory() {
     const resultsTable = document.getElementById('result-grid-container');
     if (!resultsTable) return;
+    
+    const questionNumberHeader = document.createElement('div');
+    questionNumberHeader.classList.add('header-cell');
+    questionNumberHeader.textContent = '問題番号';
+    resultsTable.appendChild(questionNumberHeader);
+
+    const questionHeader = document.createElement('div');
+    questionHeader.classList.add('header-cell', 'question');
+    questionHeader.textContent = '問題';
+    resultsTable.appendChild(questionHeader);
+
+    const resultHeader = document.createElement('div');
+    resultHeader.classList.add('header-cell');
+    resultHeader.textContent = '成否';
+    resultsTable.appendChild(resultHeader);
+
 
     questionHistory.forEach((history, index) => {
         const row = document.createElement('div');
