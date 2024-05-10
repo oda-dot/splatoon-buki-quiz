@@ -23,6 +23,8 @@ const weapon1Element = getElementOrNull<HTMLDivElement>(document, '#weapon-1');
 const weapon2Element = getElementOrNull<HTMLDivElement>(document, '#weapon-2');
 const weapon1Img = weapon1Element? getElementOrNull<HTMLImageElement>(weapon1Element, 'img') : null;
 const weapon2Img = weapon2Element? getElementOrNull<HTMLImageElement>(weapon2Element, 'img') : null;
+const weapon1NameElement = weapon1Element? getElementOrNull<HTMLDivElement>(weapon1Element, '.quiz-screen-weapon-name') : null;
+const weapon2NameElement = weapon2Element? getElementOrNull<HTMLDivElement>(weapon2Element, '.quiz-screen-weapon-name') : null;
 
 const answerModal = getElementOrNull<HTMLDivElement>(document, '#answer-modal');
 const answerImage = getElementOrNull<HTMLImageElement>(document, '#answer-image');  
@@ -243,8 +245,13 @@ function displayRandomWeapons(weapon1Id: number, weapon2Id: number) {
         weapon1Element.setAttribute('weapon-id', weapon1Id.toString());
         weapon2Element.setAttribute('weapon-id', weapon2Id.toString());
     }
-}
 
+    // HTMLにブキの名前を挿入
+    if (weapon1NameElement && weapon2NameElement) {
+        weapon1NameElement.textContent = weapon1Name;
+        weapon2NameElement.textContent = weapon2Name;
+    }
+}
 // ブキの画像クリック可否を操作する処理
 function setWeaponClickable(isClickable: boolean, weapon1Img: HTMLImageElement, weapon2Img: HTMLImageElement) {
     if (isClickable){
