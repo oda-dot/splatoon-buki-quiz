@@ -97,6 +97,10 @@ body {
     U+30A1-30FA; /* カタカナ */
   }
 
+@font-face {
+    font-family: 'Paintball_Beta_3';
+    src: url('src/assets/fonts/Paintball_Beta_3.ttf') format('truetype');
+}
 
 /* font-weight:normalを@font-faceに指定しても変わらなかったが、h1など個別に指定すると適用された */
 /* テキストに若干の角度をつけて日本語フォントが崩れるのを防ぐ */
@@ -110,7 +114,7 @@ h1, h2, p, div, text{
 }
 
 body {
-  font-family: 'CustomFont1', 'CustomFont2',  sans-serif;
+  font-family: 'CustomFont1', 'CustomFont2', 'Paintball_Beta_3',  sans-serif;
 }
 
 /* 問題数大きく */
@@ -164,7 +168,7 @@ body {
   text-align: center;
 }
 button {
-  font-family: 'CustomFont1', 'CustomFont2', sans-serif;
+  font-family: 'CustomFont1', 'CustomFont2', 'Paintball_Beta_3', sans-serif;
   background-color: #603BFF;
   color: #EAFF3D;
   border: none;
